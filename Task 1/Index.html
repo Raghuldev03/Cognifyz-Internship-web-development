@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognifyz Level:1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header + navigation --->
+  <a name="Top"></a>
+  <nav>
+    <div class="menu">
+      <div class="navbar">
+        <a href="#home" style="color: orange;">Home</a>
+        <a href="#about">About</a>
+        <a href="#over">Overview</a>
+        <a href="#calci">Calculator</a>
+        <a href="#contact">Contact</a>
+        <div class="navbar-right">
+          <a href="#" style="color: orange;">Cognifyz Technologies</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Welcom to Web Development Intern</div>
+    <div class="sub_title">Leve l Task by Cognifyz</div>
+    <div class="btns">
+      <button>Learn More</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--header part end --->
+  <!-- About--->
+  <a name="about"></a>
+  <h1 style="color:orange; text-align: center; text-decoration:underline;">About Cognifyz</h1><br>
+  <section style="background-color:rgb(247, 247, 247);">
+    <div class="container">
+      <div class="image">
+        <img src="image/1.jpg">
+      </div>
+      <div class="text">
+        <h1 style="text-decoration: underline;">Welcome to Cognifyz Technologies.</h1><br>
+        <p style="text-align: justify;">Cognifyz Technologies is a leading technology company that specializes in the dynamic field of data science and excels in delivering impactful projects and solutions.
+          The company offers a wide range of products and services, including artificial intelligence (AI), machine learning (ML), and data analytics tools.</p><br>
+        <p style="text-align: justify; color: rgb(88, 88, 88);">Cognifyz Technologies also provides training programs to enhance skills and knowledge in these areas.
+          The company focuses on delivering innovative and cutting-edge solutions to meet the evolving needs of businesses</p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <!-- Tabout end--->
+  <!-- Taskkover view--->
+  <a name="over"></a>
+  <h1 style="color:orange; text-align: center; text-decoration:underline;">Overview of Level 1</h1><br><br>
+  <section>
+    <div class="faqs">
+      <div class="text">
+        <h1>Assigned Level 1 task by Cognifyz :</h1><br>
+        <h4 style="color:orange">Task one :</h4>
+        <p style="text-align: justify;">Create a simple webpage with aheading, paragraph, and image using HTML and CSS. Build a basic form with a single input field and a submit button using HTML
+          and CSS. Design and code a simple navigation menu with three links using HTML and CSS.
+        </p><br>
+        <h4 style="color:orange;">Task two :</h4>
+        <p style="text-align: justify;">Develop a basic button that changes its color when clicked using JavaScript. Create an alert box that displays a
+          greeting message based on the current time using JavaScript. Build a basic calculator that adds two numbers together and displays the result using JavaScript.</p><br>
+      </div>
+      <img src="image/2.jpg" alt="">
+      </p>
+    </div>
+  </section>
+  <!-- Taskkover view end --->
+  <br>
+
+  <a name="calci"></a>
+  <h1 style="color:orange; text-align: center; text-decoration:underline;">Calculator</h1><br>
+  <h4 style="text-align: center;">Build a basic calculator that adds two
+    numbers together and displays the
+    result using JavaScript.
+  </h4>
+  <br>
+  <section class="cl">
+    <div class="calculator">
+      <input type="text" id="display" readonly>
+      <div class="buttons" onclick="handleButtonClick(event)">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <button class="calculate">=</button>
+        <button>C</button>
+        <button>.</button>
+        <button class="backspace" style="width: 215%;">←</button>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- Footer-->
+  <a name="contact"></a>
+  <footer style="background-color: #2c3e50; color: #ecf0f1; padding: 30px; text-align: center;">
+    <div>
+      <h3 style="color:orange;">Contact Us</h3>
+      <p style="font-size: 16px;">Cognifyz Technologies</p>
+      <a href="#Top" style="color: #66b9fe; text-decoration: none;"> Return to Home</a>
+    </div>
+    <div style="margin-top: 20px;">
+      <h3 style="color: orange;">Social Profiles</h3>
+      <a href="#" style="color: #ecf0f1; margin-right: 10px; text-decoration: none;">LinkedIn</a>
+      <a href="#" style="color: #ecf0f1; text-decoration: none;">Instagram</a>
+    </div>
+    <div style="margin-top: 20px;">
+      <h3 style="margin-top:15px;color:  orange;">Stay connected with us:</h3><br>
+      <div class="input-container">
+        <input type="email" placeholder="Enter your email">
+        <button>Submit</button>
+        <button onclick="displaytime() ">Display Current Time</button>
+      </div>
+    </div>
+    <div style="margin-top: 20px;">
+      <p style="font-size: 14px;">&copy; 2023 Raghul level 1. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer End-->
+
+  <!-- Java script-->
+  <script>
+    function displaytime() {
+      let currentTime = new Date();
+      let hours = currentTime.getHours();
+      let minutes = currentTime.getMinutes();
+      let seconds = currentTime.getSeconds();
+      let time = hours + ':' + minutes + ':' + seconds;
+      alert("Welcome to level 1 task 2.! " + " Current time is : " + time);
+    }
+
+    // current date time end
+
+    // claculator
+    document.addEventListener('DOMContentLoaded', () => {
+      const display = document.getElementById('display');
+      const buttons = document.querySelector('.buttons');
+
+      buttons.addEventListener('click', handleButtonClick);
+
+      function handleButtonClick(event) {
+        const clickedButton = event.target;
+
+        if (clickedButton.tagName === 'BUTTON') {
+          const buttonText = clickedButton.textContent;
+
+          if (buttonText === '=') {
+            calculate();
+          } else if (buttonText === 'C') {
+            clearDisplay();
+          } else if (buttonText === '←') {
+            backspace();
+          } else {
+            appendToDisplay(buttonText);
+          }
+        }
+      }
+
+      function appendToDisplay(value) {
+        display.value += value;
+      }
+
+      function clearDisplay() {
+        display.value = '';
+      }
+
+      function backspace() {
+        display.value = display.value.slice(0, -1);
+      }
+
+      function calculate() {
+        try {
+          display.value = Function(`'use strict'; return ${display.value}`)();
+        } catch (error) {
+          display.value = 'Error';
+        }
+      }
+    });
+
+  </script>
+  <!-- Java script ends -->
+</body>
+
+</html>
